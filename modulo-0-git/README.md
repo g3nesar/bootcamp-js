@@ -24,3 +24,5 @@ laboratorio.
 6. Se creo la rama development para realizar cambios en este archivo. se utilizaron los siguientes comandos: "git checkout -b development" para crear la rama y moverse a ella. Luego se realiza un "git add ." y un "git commit" para agregar los cambios. Luego se utiliza "git checkout main" para regresar a la rama principal y luego un "git merge development" para fusionar las dos ramas.
 
 7. Por ultimo se hara un "git push origin main" para subir los cambios al respositorio de github.
+
+Y listo. Con esto terminamos el laboratorio.
