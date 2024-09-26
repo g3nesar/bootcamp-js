@@ -133,3 +133,15 @@ button:focus-visible {
 .resetBtn {
   background-color: red;
 }
+
+.numeroUsuario {
+  background-color: #fff;
+  color: #000;
+  width: 150px;
+  height: 20px;
+  padding: 5px;
+}
+
+.insertarNum {
+  background-color: #535bf2;
+}
