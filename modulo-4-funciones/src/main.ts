@@ -1,16 +1,32 @@
 import './style.css';
-
+console.log("prueba");
 // CAPTURA DE BOTONES
-const anteriorBtn = document.querySelector('.anteriorBtn') as HTMLButtonElement;
-const resetBtn = document.querySelector('.resetBtn') as HTMLButtonElement;
-const siguienteBtn = document.querySelector('.siguienteBtn') as HTMLButtonElement;
-const insertarNumero = document.querySelector('.insertarNum') as HTMLButtonElement;
+const anteriorBtn = document.querySelector('.anteriorBtn');
+const resetBtn = document.querySelector('.resetBtn');
+const siguienteBtn = document.querySelector('.siguienteBtn');
+const insertarNumero = document.querySelector('.insertarNum');
+
+// VALIDACION DE BOTONES
+
+if (anteriorBtn !== null && anteriorBtn !== undefined && anteriorBtn instanceof HTMLButtonElement) {
+  anteriorBtn.disabled = false;
+}
+if (resetBtn !== null && resetBtn !== undefined && resetBtn instanceof HTMLButtonElement) {
+  resetBtn.disabled = false;
+}
+if (siguienteBtn !== null && siguienteBtn !== undefined && siguienteBtn instanceof HTMLButtonElement) {
+  siguienteBtn.disabled = false;
+}
+if (insertarNumero !== null && insertarNumero !== undefined && insertarNumero instanceof HTMLButtonElement) {
+  insertarNumero.disabled = false;
+}
+
 
 // CAPTURA DE TURNO
-let turno = document.querySelector('h1.numero-turno') as HTMLHeadingElement;
-let nuevoTurno: number = Number(turno.textContent);
-console.log(`Valor antes de hacer click en botones: ${nuevoTurno}`);
-
+let turno = document.querySelector('h1.numero-turno');
+if (turno !== null && turno !== undefined && turno instanceof HTMLHeadingElement) {
+  let nuevoTurno: number = Number(turno.textContent);
+}
 // Funcion para aumentar un numero de turno.
 function aumentarTurno(): void {
   if (nuevoTurno < 0) {
