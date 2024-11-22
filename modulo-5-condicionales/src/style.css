@@ -4,8 +4,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #1a1a1a;
+  background-color: #fff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -32,8 +32,9 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2.2em;
   line-height: 1.1;
+  color: crimson;
 }
 
 #app {
@@ -41,6 +42,11 @@ h1 {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  /* Custom Code */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 48px;
 }
 
 .logo {
@@ -94,4 +100,35 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* Custom Code */
+
+.seccion3 {
+  grid-column: span 2 / span 2;
+}
+
+.puntuacion {
+  font-size: 7em;
+  color: #1a1a1a;
+}
+
+.botones {
+  display: flex;
+  gap: 16px;
+}
+
+.pedirCarta {
+  background-color: rgb(0, 207, 0);
+}
+.mePlanto {
+  background-color: orangered;
+}
+
+.simular {
+  background-color: rgb(0, 202, 151);
+}
+
+.nuevaPartida {
+  background-color: #1f2afd;
 }
